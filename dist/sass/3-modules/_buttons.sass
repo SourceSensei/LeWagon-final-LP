@@ -1,0 +1,74 @@
+.explore
+    padding: 0.5rem 1rem
+    text-decoration: none
+    font-size: 0.8rem
+    color: white
+    background-color: $special-blue
+    border-radius: 0.25rem
+    &:hover
+        background-color: #3b1fad
+        @include button-move-top
+
+.explore
+    @media only screen and (max-width: 960px)
+        font-size: 0.75rem
+
+.contact-btn-container
+    position: absolute
+    left: 50%
+    top: 82%
+    transform: translate(-50%, -50%)
+    @media only screen and (max-width: 960px)
+        top: 90%
+        margin: 1.5rem 0
+
+.btn-contact-popup
+    background-color: $special-blue
+    color: white
+    border: none
+    padding: 0.75rem 2rem
+    border-radius: 0.25rem
+    outline: none
+    text-transform: uppercase
+    font-size: 0.75rem
+    font-weight: 700
+    letter-spacing: 0.15rem
+    cursor: pointer
+    &:hover
+        background-color: #3b1fad
+        @include button-move-top
+
+
+.close-btn
+    border: none
+    margin-left: 35rem
+    @media only screen and (max-width: 960px)
+        margin-left: 10rem
+
+
+
+.close-btn i
+    font-size: 2rem
+    padding: 0.25rem
+    color: $special-blue
+    background: white
+    cursor: pointer
+
+.modal-btn-email
+    padding: 0.5rem 1.5rem
+    border-radius: 0.25rem
+    margin-top: 1rem
+    background-color: $special-blue
+    color: white
+    text-decoration: none
+    text-transform: uppercase
+    letter-spacing: 0.15rem
+    font-weight: 700
+    &:hover
+        background-color: #3b1fad
+        @include button-move-top
+
+
+.modal-btn-email
+    @media only screen and (max-width: 960px)
+        font-size: 0.9rem
