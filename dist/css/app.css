@@ -8,6 +8,11 @@ body {
   font-family: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
   overflow-x: hidden;
 }
+@media only screen and (max-width: 960px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 
 h1 {
   font-size: 4rem;
@@ -170,7 +175,7 @@ i {
 @media only screen and (max-width: 960px) {
   .modal-heading {
     font-size: 1.5rem;
-    padding: 6rem;
+    padding: 3rem;
   }
 }
 
@@ -254,8 +259,8 @@ i {
 }
 @media only screen and (max-width: 960px) {
   .nav-links {
-    margin-top: 8rem;
-    margin-left: 7rem;
+    margin-top: 10rem;
+    margin-left: 8rem;
   }
 }
 
@@ -298,6 +303,12 @@ body.hide {
 .burguer {
   cursor: pointer;
   z-index: 2;
+}
+
+@media only screen and (max-width: 960px) {
+  section {
+    overflow: hidden;
+  }
 }
 
 .hero {
@@ -656,8 +667,8 @@ body.hide {
 }
 @media only screen and (max-width: 960px) {
   .modal-container {
-    top: 75%;
-    left: 25%;
+    top: 40%;
+    left: 50%;
   }
 }
 
