@@ -1,4 +1,0 @@
-[build]
-  base    = "lewagon-final-lp"
-  publish = "lewagon-final-lp/dist/"
-  command = "npm run sass"
