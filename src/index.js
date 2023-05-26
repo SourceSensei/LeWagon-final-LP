@@ -45,7 +45,7 @@ function animateSlides() {
       { x: "100%", opacity: 0.5 }
     );
     slideTl.fromTo(revealAbout, { x: "0%" }, { x: "100%" }, "-=2.5");
-    slideTl.to(numberCount1, { innerText: 500 });
+    slideTl.to(numberCount1, { innerText: 500 }, "-=3");
     slideTl.to(numberCount2, { innerText: 1000 }, "-=3");
     slideTl.to(numberCount3, { innerText: 2500 }, "-=3");
     slideTl.fromTo(revealBox, { y: "0%" }, { y: "100%" }, "-=2");
