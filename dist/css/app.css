@@ -55,6 +55,7 @@ i {
   .hero-text {
     font-size: 0.8rem;
     margin: 1rem 0;
+    text-align: right;
   }
 }
 
@@ -169,7 +170,7 @@ i {
 @media only screen and (max-width: 960px) {
   .modal-heading {
     font-size: 1.5rem;
-    padding: 3rem;
+    padding: 6rem;
   }
 }
 
@@ -179,7 +180,7 @@ i {
 }
 @media only screen and (max-width: 960px) {
   .contact-bar h2 {
-    font-size: 2rem;
+    display: none;
   }
 }
 
@@ -189,7 +190,7 @@ i {
 }
 @media only screen and (max-width: 960px) {
   .contact-bar p {
-    font-size: 1rem;
+    display: none;
   }
 }
 
@@ -199,6 +200,7 @@ i {
   }
 }
 
+.footer-a,
 .footer-a:active,
 .footer-a:active:focus {
   color: white;
@@ -242,13 +244,19 @@ i {
 }
 @media only screen and (max-width: 960px) {
   .nav-bar {
-    padding: 3rem;
+    display: block;
   }
 }
 
 .nav-links {
   font-size: 2.5rem;
   flex-basis: 30rem;
+}
+@media only screen and (max-width: 960px) {
+  .nav-links {
+    margin-top: 8rem;
+    margin-left: 7rem;
+  }
 }
 
 .nav-links h3 {
@@ -312,7 +320,8 @@ body.hide {
 }
 @media only screen and (max-width: 960px) {
   .hero-desc {
-    left: 52%;
+    left: 65%;
+    text-align: right;
   }
 }
 
@@ -489,7 +498,7 @@ body.hide {
 }
 @media only screen and (max-width: 960px) {
   .close-btn {
-    margin-left: 10rem;
+    margin-left: 15rem;
   }
 }
 
@@ -534,6 +543,11 @@ body.hide {
   position: absolute;
   transform: translate(-50%, -50%);
   pointer-events: none;
+}
+@media only screen and (max-width: 960px) {
+  .cursor {
+    display: none;
+  }
 }
 
 .testimonial-container {
@@ -639,6 +653,12 @@ body.hide {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 960px) {
+  .modal-container {
+    top: 75%;
+    left: 25%;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

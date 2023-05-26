@@ -1,12 +1,15 @@
 //Smooth scroll
-$(document).ready(function() {
-  $('a[href^="#"]').on('click', function(event) {
-    var target = $(this.getAttribute('href'));
-    if( target.length ) {
+$(document).ready(function () {
+  $('a[href^="#"]').on("click", function (event) {
+    var target = $(this.getAttribute("href"));
+    if (target.length) {
       event.preventDefault();
-      $('html, body').stop().animate({
-        scrollTop: target.offset().top
-      }, 1000);
+      $("html, body").stop().animate(
+        {
+          scrollTop: target.offset().top,
+        },
+        1000
+      );
     }
   });
 });
@@ -41,21 +44,21 @@ function animateSlides() {
       { x: "0%", opacity: 1 },
       { x: "100%", opacity: 0.5 }
     );
-    slideTl.fromTo(revealAbout, { x: "0%" }, { x: "100%" }, "-=2");
+    slideTl.fromTo(revealAbout, { x: "0%" }, { x: "100%" }, "-=2.5");
     slideTl.to(numberCount1, { innerText: 500 });
-    slideTl.to(numberCount2, { innerText: 1000 }, "-=2");
-    slideTl.to(numberCount3, { innerText: 2500 }, "-=2");
-    slideTl.fromTo(revealBox, { y: "0%" }, { y: "100%" }, "-=1");
+    slideTl.to(numberCount2, { innerText: 1000 }, "-=3");
+    slideTl.to(numberCount3, { innerText: 2500 }, "-=3");
+    slideTl.fromTo(revealBox, { y: "0%" }, { y: "100%" }, "-=2");
     slideTl.fromTo(
       revealContact,
       { x: "0%", opacity: 1 },
       { x: "100%", opacity: 0.75 },
-      "-=5"
+      "-=5.5"
     );
     //Create scene
     slideScene = new ScrollMagic.Scene({
       triggerElement: slide,
-      triggerHook: 0.25,
+      triggerHook: 1.2,
       reverse: false,
     })
       .setTween(slideTl)
@@ -95,12 +98,11 @@ animateSlides();
 const typed = new Typed(".hero-span-second", {
   strings: ["Source Sensei", "Web Developer", "Web Designer"],
   startDelay: 1000,
-  typeSpeed: 80,
-  backSpeed: 80,
+  typeSpeed: 120,
+  backSpeed: 120,
   loop: true,
   showCursor: true,
 });
-
 
 //PopUp
 const modalBtn = document.querySelector(".modal-btn");
@@ -114,8 +116,6 @@ modalBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   gsap.to(modalOverlay, { duration: 0.3, display: "none", opacity: 0 });
 });
-
-
 
 //Testemonials
 const testimonialsContainer = document.querySelector(".testimonials-container");
